@@ -1,0 +1,59 @@
+{
+  "plugins": [
+    "eslint-plugin-import"
+  ],
+  "extends": [
+    "eslint:recommended",
+  ],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true,
+    "jasmine": true
+  },
+  "rules": {
+    "eol-last": 2,
+    "semi": 2,
+    "eqeqeq": 2,
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "no-console": 1,
+    "curly": 2,
+    "prefer-const": 2,
+    "dot-notation": 1,
+    "no-multiple-empty-lines": 1,
+    "no-empty": [
+      "error",
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "no-empty-pattern": 1,
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "external",
+          "internal"
+        ]
+      }
+    ],
+    "no-unused-vars": 1,
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "TemplateLiteral"
+        ]
+      }
+    ],
+    "template-curly-spacing": [
+      "off"
+    ]
+  },
+}
